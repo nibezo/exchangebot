@@ -1,11 +1,11 @@
+require("dotenv").config();
 const express = require("express");
 const axios = require("axios");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 let exchangeRates = {};
-const API_URL =
-  "https://v6.exchangerate-api.com/v6/8e086937a5a3278bb65f2e54/latest/USD";
+const API_URL = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`;
 
 async function fetchExchangeRates() {
   try {
