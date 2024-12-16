@@ -6,7 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 let corsOptions = {
-  origin: ["http://localhost:3000", "https://finstoryapp.ilyadev.tech"],
+  origin: [
+    "http://localhost:3000",
+    "https://finstoryapp.ilyadev.tech",
+    "http://127.0.0.1:3000",
+  ],
 };
 app.use(cors(corsOptions));
 let exchangeRates = {};
