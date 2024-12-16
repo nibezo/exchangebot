@@ -1,9 +1,14 @@
 require("dotenv").config();
 const express = require("express");
+const cors = require("cors");
 const axios = require("axios");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+let corsOptions = {
+  origin: ["http://localhost:3000", "https://finstoryapp.ilyadev.tech"],
+};
+app.use(cors(corsOptions));
 let exchangeRates = {};
 const API_URL = `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`;
 
