@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 let corsOptions = {
   origin: [
     "http://localhost:3000",
-    "https://finstoryapp.ilyadev.tech",
+    "https://finstoryapp.frontgr.com",
     "http://127.0.0.1:3000",
   ],
 };
