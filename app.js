@@ -10,6 +10,7 @@ let corsOptions = {
     "http://localhost:3000",
     "https://finstoryapp.frontgr.com",
     "http://127.0.0.1:3000",
+    "https://antique-defects-philadelphia-join.trycloudflare.com",
   ],
 };
 app.use(cors(corsOptions));
