@@ -11,6 +11,7 @@ let corsOptions = {
     "https://finstoryapp.frontgr.com",
     "http://127.0.0.1:3000",
     "https://antique-defects-philadelphia-join.trycloudflare.com",
+    "https://fiber-forwarding-receiver-yo.trycloudflare.com",
   ],
 };
 app.use(cors(corsOptions));
