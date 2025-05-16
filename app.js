@@ -12,6 +12,7 @@ let corsOptions = {
     "http://127.0.0.1:3000",
     "https://antique-defects-philadelphia-join.trycloudflare.com",
     "https://fiber-forwarding-receiver-yo.trycloudflare.com",
+    "https://flashing-bidder-wheels-mali.trycloudflare.com",
   ],
 };
 app.use(cors(corsOptions));
